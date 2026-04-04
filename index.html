@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雑学データベース</title>
+<meta name="description" content="雑学データベース - 知って得する雑学を毎日お届け">
+
+<style>
+:root {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --text-light: #555;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --border: #e5e7eb;
+  --max-width: 780px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  text-align: center;
+}
+.site-header h1 { font-size: 1.5rem; letter-spacing: 0.05em; }
+.site-header h1 a { color: var(--text); }
+
+.container { max-width: var(--max-width); margin: 0 auto; padding: 2rem 1rem; }
+
+/* Article card list */
+.article-list { list-style: none; }
+.article-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s;
+}
+.article-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.article-card h2 { font-size: 1.15rem; margin-bottom: 0.3rem; }
+.article-card .meta { color: var(--text-light); font-size: 0.85rem; }
+.article-card .desc { margin-top: 0.4rem; font-size: 0.95rem; color: var(--text-light); }
+
+/* Article page */
+.article-header { margin-bottom: 2rem; }
+.article-header h1 { font-size: 1.6rem; line-height: 1.4; margin-bottom: 0.5rem; }
+.article-header .meta { color: var(--text-light); font-size: 0.85rem; }
+.article-body h2 { font-size: 1.3rem; margin: 2rem 0 0.8rem; padding-bottom: 0.3rem; border-bottom: 2px solid var(--accent); }
+.article-body h3 { font-size: 1.1rem; margin: 1.5rem 0 0.6rem; }
+.article-body p { margin-bottom: 1rem; }
+.article-body ul, .article-body ol { margin: 0.8rem 0 1rem 1.5rem; }
+.article-body li { margin-bottom: 0.3rem; }
+.article-body code { background: #f3f4f6; padding: 0.15em 0.4em; border-radius: 3px; font-size: 0.9em; }
+.article-body hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+.youtube-embed {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Share buttons */
+.share-buttons { margin: 2rem 0; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.share-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.share-btn.twitter { background: #1da1f2; }
+.share-btn.line { background: #06c755; }
+.share-btn.hatena { background: #00a4de; }
+
+/* Related articles */
+.related { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+.related h2 { font-size: 1.1rem; margin-bottom: 1rem; }
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  .container { padding: 1rem 0.8rem; }
+  .article-header h1 { font-size: 1.3rem; }
+  .article-body h2 { font-size: 1.15rem; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1><a href="index.html">雑学データベース</a></h1>
+</header>
+<main class="container">
+
+<h2 style="margin-bottom:1rem;">記事一覧（5件）</h2>
+<ul class="article-list">
+
+<li class="article-card">
+  <h2><a href="aircon_onoff.html">エアコンのつけっぱなしは電気代が安い？35分以内なら得する理由</a></h2>
+  <div class="meta">生活 | 2026-04-05</div>
+  <div class="desc">エアコンは起動時に最も電力を消費するため、35分以内の外出ならつけっぱなしの方が電気代が安くなります。ダイキンの実験で証明された節電の新常識。つけっぱなしのメリットと正しい使い方を徹底解説します。</div>
+</li>
+<li class="article-card">
+  <h2><a href="sponge_bacteria.html">スポンジの菌は362種類！交換頻度と正しい管理方法</a></h2>
+  <div class="meta">生活 | 2026-04-05</div>
+  <div class="desc">キッチンのスポンジに潜む菌の数はトイレの20万倍。ドイツの研究で362種類の細菌が確認されています。この記事では、スポンジが菌の温床になる理由、健康リスク、2週間ごとの交換方法など、スポンジの菌対策を完全解説します。今すぐ実践できる衛生管理</div>
+</li>
+<li class="article-card">
+  <h2><a href="wifi_router_floor.html">WiFiルーターを床に置くな！電波が50%損する理由と最適な高さ設置方法</a></h2>
+  <div class="meta">生活 | 2026-04-05</div>
+  <div class="desc">WiFiルーターを床に置くと電波が大幅に損失することをご存知ですか？電波の球状伝播と床の反射による干渉の仕組みから、自宅WiFi速度を劇的に改善する高さ1メートル設置方法まで完全解説。今すぐ実践できる対策を紹介します。</div>
+</li>
+<li class="article-card">
+  <h2><a href="soy_sauce_room_temp.html">醤油の常温保存はNG！開封後の正しい保存方法と1ヶ月使い切りルール</a></h2>
+  <div class="meta">生活 | 2026-04-05</div>
+  <div class="desc">醤油を常温で保存していませんか？開封後の醤油は常温保存で酸化が進み、風味が落ちます。この記事では、醤油の正しい常温保存の危険性、冷蔵庫での正しい保存方法、1ヶ月で使い切るコツまで徹底解説。醤油の鮮度を保つ方法がわかります。</div>
+</li>
+<li class="article-card">
+  <h2><a href="egg_door_pocket.html">卵をドアポケットに入れるのはNG！正しい冷蔵庫での保存方法</a></h2>
+  <div class="meta">生活 | 2026-04-05</div>
+  <div class="desc">卵をドアポケットに保存していませんか？実は卵をドアポケットに入れると、ドアの開閉による振動でヒビが入り、温度変化で鮮度が低下します。この記事では、卵の最適な保存場所と正しい保存方法を徹底解説。冷蔵庫の奥に入れるだけで卵の鮮度を保つコツがわか</div>
+</li>
+</ul>
+</main>
+<footer class="site-footer">
+  &copy; 2026 雑学データベース
+</footer>
+</body>
+</html>
