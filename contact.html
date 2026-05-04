@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ | 雑学データベース</title>
+<meta name="description" content="雑学データベースへのお問い合わせはこちらからどうぞ。">
+<link rel="canonical" href="https://agf31070-sketch.github.io/zatsugaku-database/contact.html">
+<style>
+:root { --bg:#fafafa; --surface:#ffffff; --text:#1a1a1a; --text-light:#555; --accent:#2563eb; --accent-hover:#1d4ed8; --border:#e5e7eb; --max-width:780px; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{font-size:16px;}
+body{font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;background:var(--bg);color:var(--text);line-height:1.8;min-height:100vh;}
+a{color:var(--accent);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.site-header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 0;text-align:center;}
+.site-header h1{font-size:1.5rem;letter-spacing:0.05em;}
+.site-header h1 a{color:var(--text);}
+.container{max-width:var(--max-width);margin:0 auto;padding:2rem 1rem;}
+h1{font-size:1.6rem;margin-bottom:0.5rem;}
+.lead{color:var(--text-light);margin-bottom:2rem;}
+.form-group{margin-bottom:1.5rem;}
+label{display:block;font-weight:bold;margin-bottom:0.4rem;font-size:0.95rem;}
+input[type="text"],input[type="email"],textarea{width:100%;padding:0.7rem 1rem;border:1px solid var(--border);border-radius:6px;font-size:1rem;font-family:inherit;background:var(--surface);color:var(--text);transition:border-color 0.2s;}
+input[type="text"]:focus,input[type="email"]:focus,textarea:focus{outline:none;border-color:var(--accent);}
+textarea{min-height:160px;resize:vertical;}
+.btn-submit{display:inline-block;background:var(--accent);color:#fff;padding:0.7rem 2rem;border:none;border-radius:6px;font-size:1rem;font-weight:bold;cursor:pointer;transition:background 0.2s;}
+.btn-submit:hover{background:var(--accent-hover);}
+.note{font-size:0.85rem;color:var(--text-light);margin-top:0.3rem;}
+.site-footer{text-align:center;padding:2rem 1rem;color:var(--text-light);font-size:0.8rem;border-top:1px solid var(--border);margin-top:3rem;}
+@media(max-width:600px){.container{padding:1rem 0.8rem;}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1><a href="index.html">雑学データベース</a></h1>
+</header>
+<main class="container">
+<h1>お問い合わせ</h1>
+<p class="lead">ご質問・ご意見・掲載内容に関するご指摘など、お気軽にお問い合わせください。</p>
+
+<form action="https://formspree.io/f/xzzbbqgp" method="POST">
+  <div class="form-group">
+    <label for="name">お名前 <span style="color:#e33">*</span></label>
+    <input type="text" id="name" name="name" required placeholder="例：田中 太郎">
+  </div>
+  <div class="form-group">
+    <label for="email">メールアドレス <span style="color:#e33">*</span></label>
+    <input type="email" id="email" name="email" required placeholder="例：example@mail.com">
+    <p class="note">返信先として使用します。第三者に公開することはありません。</p>
+  </div>
+  <div class="form-group">
+    <label for="subject">件名</label>
+    <input type="text" id="subject" name="subject" placeholder="例：記事の内容について">
+  </div>
+  <div class="form-group">
+    <label for="message">お問い合わせ内容 <span style="color:#e33">*</span></label>
+    <textarea id="message" name="message" required placeholder="お問い合わせ内容をご記入ください。"></textarea>
+  </div>
+  <button type="submit" class="btn-submit">送信する</button>
+</form>
+
+<p style="margin-top:2rem;font-size:0.9rem;color:var(--text-light);">
+  ※ 通常2〜3営業日以内にご返信いたします。<br>
+  ※ お問い合わせ内容によってはご返信できない場合があります。
+</p>
+</main>
+<footer class="site-footer">
+  &copy; 2026 雑学データベース<br>
+  <small>本サイトの記事はAIツールを活用して作成し、人間が監修・編集しています。</small>
+</footer>
+</body>
+</html>
